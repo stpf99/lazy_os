@@ -1,0 +1,19 @@
+1.packages-name-generator (local : from make-file_deps,readme-parser,install-parser,external:web-databes-url(api/txt/html/php-parser,database-injection)
+2.layout-configurator for each single package/layout-schema/ordinary-data (name/name-definitions/versions(release-number, tag-number(git-hashtag,normal-number,chest-name) from packages-name-generator-if-type-layout
+2A.layout-extractor( from know layout-sources, cobined : cobined-by-code-lang(with level:main,simple.advanced), combined-by-maintainer-source(with level:main(stared),simple(if-neccesary).advanced(all-suggested),released(relaeased)
+2B.layout-studio(from code-complex-ivity(code-weight,needed-libs,is-dependable,is-autonomic) from test-run(y,n) 
+
+3.fetcher(local_defined,external,base-included-type)
+3A.fetcher_type_pocedure (if local_defined > do procedure by local_code , if need base-incuded-type check if exist(place,version,stream_compatibilty an when no exist fetch by package name by curl or *local-prefetch)then fetch external-type if needed by local-prefetch if simple ftp/http remote object or by name-pkgs-layout from database
+4.builder_pre_launcher
+4A.raport for : 
+-commit sha inconsistences
+-needed tools to build (exist=(),no-exist(), no-needed-to upgrade(grab previous version=local-dir=place remote-dir=mount)
+-add relase version to each pkgs(os_ver +static-pkg=99, old-stable=09(downgrade),new-release=pkg_release_ver+commit-version+tested/untested/stable/unstable)
+5.launch_build for endpoint()
+5A. do ordering from 0 (fundamental) to end of database "sanata claus"
+5B. grab or compile toolchain from layout (layout = if exist fetch by fetcher from (previous os version) or compile by layout locally if no
+5C test toolchain for most advanced testpoint sheetcode possible flag by flag-conf
+6D. set flag for toolchain an output flag-conf to pkg-flag-conf if auto
+7. make world
+7A. loop build(from package-specific-layout for making pkg by pkg  from 1 to last)
