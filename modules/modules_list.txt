@@ -1,7 +1,9 @@
-1.all_master_(most_updated(unstable)/
-a- set flag git-commit=master or main or none
+A.all_master_(most_updated(unstable)/
+a. set flag git-commit=master or main or none
 none - is type ignored
-
+b. most_stable=grep and sort stress_test_suit_index (pkg=version,eqivalent) in one sheet for pkg name-ver-gold/silver/bronze/// gold(mediana = fast/stable , silver = mediana stable/compatibility-accuracy, bronze pkg with ~= mediana gold and silver)
+c. high_score=[from_benchamrk_index=(phoronix_test_suite,other indexed_suits,database(local,remote)]/
+relase_to_date /// do schema for each pkg_name compare and outpu highest
 
 
 1.packages-name-generator (local : from make-file_deps,readme-parser,install-parser,external:web-databes-url(api/txt/html/php-parser,database-injection)
