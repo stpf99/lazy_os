@@ -1,0 +1,32 @@
+
+A.all_master_(most_updated(unstable)/
+a. set flag git-commit=master or main or none
+none - is type ignored
+B. most_stable=grep and sort stress_test_suit_index (pkg=version,eqivalent) in one sheet for pkg name-ver-gold/silver/bronze/// gold(mediana = fast/stable , silver = mediana stable/compatibility-accuracy, bronze pkg with ~= mediana gold and silver)
+C. high_score=[from_benchamrk_index=(phoronix_test_suite,other indexed_suits,database(local,remote)]/
+relase_to_date /// do schema for each pkg_name compare and outpu highest
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+variables:
+          -build_type:
+                      -1.all_master=repo_($type)_flag=(git:master,main,none) #most updated / unstable
+                      -2.most_stable=stress_($test)_winner
+                      -3.high_score=$pkg-$repo_($type=0-3,4)_flag-$tier_by($test) #select winner
+                      -4.relased_to=$(date,pkg=$ver)
+                      -mix(1,2,3,4,...)
+variables_type:
+          -local:
+                      -pkg=version,equivalent, all, ... all-"4.0"
+                      -repo_($type)_flag=[(git:master,main,none,ver,commit,hashtag), (svn:bla,bla,none, ...).(ftp,http,https:latest,ver,head,snapshot, ...), all, all-/+ $type, ...
+                      -type=git,svn.ftp.http,https,all, ...
+                      -stress_($test)_winner=$pkg-$repo_($type)_flag-$tier_by($test)
+                      -test=(1=phoronix_test_suite, 2=indexed_suite_1, 3=local_stresstest_file, 4=database_type, 0=all, ... #parser needed for each one in submodule
+                      -tier_by=[(oryginal,equivalent=lang,source):gold, silver, bronze]
+          -global
+                       -local=path(///root/...)
+                       -remote=$type
+                       -gold=highest_score[(fast+stable/2)]
+                       -silver=highest_score[(stable+compatibility-accuracy/2)]
+                       -bronze=highest_score[($gold+$silver/2)]
+                       -equivalent=$lang
+                       -lang=C,C++,D,python ...
