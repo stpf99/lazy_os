@@ -13,7 +13,7 @@ variables:
                       -2.most_stable=stress_($test)_winner
                       -3.high_score=$pkg-$repo_($type=0-3,4)_flag-$tier_by($test) #select winner
                       -4.relased_to=$(date,pkg=$ver)
-                      -mix(1,2,3,4,...)
+                      -0. mix(1,2,3,4,...4+3,...)
 variables_type:
           -local:
                       -pkg=version,equivalent, all, ... all-"4.0"
