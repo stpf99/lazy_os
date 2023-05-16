@@ -28,5 +28,5 @@ variables_type:
                        -gold=highest_score[(fast+stable/2)]
                        -silver=highest_score[(stable+compatibility-accuracy/2)]
                        -bronze=highest_score[($gold+$silver/2)]
-                       -equivalent=$lang
+                       -equivalent=$lang,$source
                        -lang=C,C++,D,python ...
